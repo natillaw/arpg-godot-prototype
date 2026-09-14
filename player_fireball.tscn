@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://crttgli4ps8s1"]
+
+[ext_resource type="Script" uid="uid://s2ywawabv4bs" path="res://player_fireball.gd" id="1_pcph4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ke0wg"]
+
+[node name="PlayerFireball" type="Node2D" unique_id=639087121]
+script = ExtResource("1_pcph4")
+
+[node name="HitArea" type="Area2D" parent="." unique_id=82343636]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitArea" unique_id=1587821565]
+scale = Vector2(14, 14)
+shape = SubResource("CircleShape2D_ke0wg")

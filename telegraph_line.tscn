@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bqsn1hpe6ihsv"]
+
+[ext_resource type="Script" uid="uid://c37u8rm6kmcjj" path="res://telegraph_line.gd" id="1_4e3jg"]
+
+[node name="TelegraphLine" type="Node2D" unique_id=1018127681]
+visibility_layer = 3
+script = ExtResource("1_4e3jg")

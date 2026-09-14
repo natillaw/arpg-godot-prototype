@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://cjmu7xjlqhhax"]
+
+[ext_resource type="Script" uid="uid://biqxvltjnliwr" path="res://tornado_vfx_scene.gd" id="1_phv25"]
+[ext_resource type="Texture2D" uid="uid://gehpgn4jm46e" path="res://assets/LAST.png" id="2_xu6ul"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bihkd"]
+atlas = ExtResource("2_xu6ul")
+region = Rect2(0, 0, 378, 338)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i8q54"]
+atlas = ExtResource("2_xu6ul")
+region = Rect2(378, 0, 378, 338)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ta4ff"]
+atlas = ExtResource("2_xu6ul")
+region = Rect2(756, 0, 378, 338)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gkaoe"]
+atlas = ExtResource("2_xu6ul")
+region = Rect2(1134, 0, 378, 338)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y8bq5"]
+atlas = ExtResource("2_xu6ul")
+region = Rect2(0, 338, 378, 338)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3cnap"]
+atlas = ExtResource("2_xu6ul")
+region = Rect2(378, 338, 378, 338)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jb65d"]
+atlas = ExtResource("2_xu6ul")
+region = Rect2(756, 338, 378, 338)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1f6aw"]
+atlas = ExtResource("2_xu6ul")
+region = Rect2(1134, 338, 378, 338)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j7wfx"]
+atlas = ExtResource("2_xu6ul")
+region = Rect2(0, 676, 378, 338)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tdh5t"]
+atlas = ExtResource("2_xu6ul")
+region = Rect2(378, 676, 378, 338)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j1ub7"]
+atlas = ExtResource("2_xu6ul")
+region = Rect2(756, 676, 378, 338)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l0jwe"]
+atlas = ExtResource("2_xu6ul")
+region = Rect2(1134, 676, 378, 338)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ke0wg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bihkd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i8q54")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ta4ff")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gkaoe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y8bq5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3cnap")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jb65d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1f6aw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j7wfx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tdh5t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j1ub7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l0jwe")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 15.0
+}]
+
+[node name="TornadoVFXScene" type="Node2D" unique_id=451962608]
+script = ExtResource("1_phv25")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=15286748]
+sprite_frames = SubResource("SpriteFrames_ke0wg")
+frame_progress = 0.04884885

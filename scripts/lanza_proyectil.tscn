@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://ca5dubjlfplbv"]
+
+[ext_resource type="Script" uid="uid://c8t75jhs035y1" path="res://scripts/skill_projectile.gd" id="1_7iqxy"]
+[ext_resource type="Texture2D" uid="uid://cvbkilt6w3pg3" path="res://assets/Idylwild's Aerial Arsenal/aerial_arsenal.png" id="2_v3vn8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vbo7a"]
+atlas = ExtResource("2_v3vn8")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ke0wg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vbo7a")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_t7ath"]
+a = Vector2(51, -32)
+b = Vector2(1, 19)
+
+[node name="Lanza_proyectil" type="Node2D" unique_id=842880024]
+script = ExtResource("1_7iqxy")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=178864239]
+position = Vector2(13, -13)
+scale = Vector2(1.8125, 1.8125)
+sprite_frames = SubResource("SpriteFrames_ke0wg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1098615845]
+position = Vector2(-11, -8)
+shape = SubResource("SegmentShape2D_t7ath")
